@@ -1,4 +1,4 @@
-## Hi there 👋 I want youth of today to understand the facts of Pakistan Economy. 
+## My mission: give Pakistan’s youth a fact-based, practical understanding of our economy. 
 
 <!--
 **Hijaziviews/Hijaziviews** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
