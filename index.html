@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hijaziviews - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #fafafa;
+    }
+    .upper-half {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      min-height: 40vh;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .upper-half img {
+      max-width: 90%;
+      max-height: 45vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+    }
+    .lower-half {
+      flex: 1;
+      padding: 2em;
+      background: #f5f5f5;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .mission {
+      font-size: 1.1em;
+      margin-bottom: 1.2em;
+      color: #2C3E50;
+    }
+    .contents-list {
+      margin-bottom: 1.5em;
+    }
+    .contents-list li {
+      margin-bottom: 0.6em;
+    }
+    .more {
+      margin-top: 1em;
+      font-size: 1em;
+      color: #2874A6;
+    }
+    @media (max-width: 600px) {
+      .upper-half img {
+        max-width: 100%;
+        max-height: 30vh;
+      }
+      .lower-half {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="upper-half">
+    <img src="https://raw.githubusercontent.com/Hijaziviews/Hijaziviews/main/Front%20Page%20of%20web.png" alt="Front Page Image">
+  </div>
+  <div class="lower-half">
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        To provide insightful visualizations, clear explanations, and interactive learning experiences on histograms, curves, and data analysis. We aim to help our users understand complex concepts through engaging content and practical examples.
+      </p>
+    </div>
+    <h2>Contents</h2>
+    <ul class="contents-list">
+      <li><a href="page1.html">Introduction to Graphs</a></li>
+      <li><a href="page2.html">Histogram Explained</a></li>
+      <li><a href="page3.html">Curves and Distributions</a></li>
+      <!-- Add more content links here as your list grows -->
+    </ul>
+    <div class="more">
+      <a href="contents.html">See more contents &rarr;</a>
+    </div>
+  </div>
+</body>
+</html>
