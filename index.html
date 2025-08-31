@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hijaziviews - Home</title>
+  <title>Pakistan Data Visualization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       font-family: Arial, sans-serif;
-      background: #fafafa;
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
-    .upper-half {
-  background: #fff;
-  min-height: 40vh;
-  border-bottom: 2px solid #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-    .front-title {
-     <div class="halfpage-image">
-  <img src="front page of web.png" alt="Front page of Pakistan web visualization">
-</div>    }
+    .halfpage-image {
+      width: 100vw;
+      height: 50vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .halfpage-image img {
+      width: 100vw;
+      height: 50vh;
+      object-fit: cover;
+      display: block;
+    }
     .lower-half {
       flex: 1;
       padding: 2em;
@@ -53,12 +57,11 @@
       color: #2874A6;
     }
     @media (max-width: 600px) {
-      .front-title {
-        font-size: 2em;
+      .halfpage-image {
+        height: 25vh;
       }
-      .upper-half img {
-        max-width: 100%;
-        max-height: 20vh;
+      .halfpage-image img {
+        height: 25vh;
       }
       .lower-half {
         padding: 1em;
@@ -67,26 +70,21 @@
   </style>
 </head>
 <body>
-  <div class="upper-half">
-    <h1 class="front-title">Front Page</h1>
-    <img src="https://raw.githubusercontent.com/Hijaziviews/Hijaziviews/main/Front%20Page%20of%20web.png" alt="Front Page Image">
+  <div class="halfpage-image">
+    <img src="front page of web.png" alt="Front page of Pakistan web visualization">
   </div>
   <div class="lower-half">
     <div class="mission">
-      <h2>Our Mission</h2>
-      <p>
-        To provide insightful visualizations, clear explanations, and interactive learning experiences on histograms, curves, and data analysis. We aim to help our users understand complex concepts through engaging content and practical examples.
-      </p>
+      Our mission: To visualize data for Pakistan, enabling better understanding of trends and insights.
     </div>
-    <h2>Contents</h2>
     <ul class="contents-list">
-      <li><a href="page1.html">Introduction to Graphs</a></li>
-      <li><a href="page2.html">Histogram Explained</a></li>
-      <li><a href="page3.html">Curves and Distributions</a></li>
-      <!-- Add more content links here as your list grows -->
+      <li>Population Statistics</li>
+      <li>Economic Indicators</li>
+      <li>Education and Health Data</li>
+      <li>Interactive Maps</li>
     </ul>
     <div class="more">
-      <a href="contents.html">See more contents &rarr;</a>
+      Explore more below!
     </div>
   </div>
 </body>
