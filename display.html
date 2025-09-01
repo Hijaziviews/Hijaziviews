@@ -7,7 +7,8 @@
   <style>
     body {
       margin: 0;
-      background: #f0f4ff; /* Replace with your Box 2 color if different */
+      padding: 0;
+      background: #e6ecfa; /* Light blue shade for page */
       font-family: Arial, sans-serif;
     }
     .container {
@@ -16,37 +17,53 @@
     }
     .left {
       width: 25%;
-      background: #f0f4ff; /* Or another color if you want contrast */
-      /* You can add content or leave blank */
+      background: #c3d3f5; /* Slightly darker blue shade for left */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border-right: 10px solid #222;
+      padding-top: 40px;
+      min-width: 250px;
     }
-    .divider {
-      width: 0;
-      border-left: 10px solid #222;
-      margin-right: -10px;
-      height: 100vh;
-    }
-    .right {
-      width: 75%;
-      padding: 40px 30px;
-    }
-    h1 {
+    .left h1 {
       font-size: 24px;
-      margin-bottom: 20px;
       color: #222;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    #presentation-list {
+      width: 90%;
+      padding-left: 24px;
+      margin: 0;
     }
     #presentation-list li {
       font-size: 16px;
       margin-bottom: 18px;
+      word-break: break-word;
+    }
+    a {
+      color: #0a2177;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .right {
+      width: 75%;
+      background: #e6ecfa; /* Lighter blue shade for right */
+      padding: 40px 30px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="left"></div>
-    <div class="divider"></div>
-    <div class="right">
-      <h1>Pakistan Economy: List of Presentations</h1>
+    <div class="left">
+      <h1>Pakistan Economy:<br>List of Presentations</h1>
       <ol id="presentation-list"></ol>
+    </div>
+    <div class="right">
+      <!-- You can add content here if needed -->
     </div>
   </div>
   <script>
