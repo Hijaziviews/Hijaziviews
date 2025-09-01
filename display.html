@@ -7,9 +7,10 @@
 </head>
 <body>
   <h2>List of Content</h2>
-  <ul id="presentation-list"></ul>
+  <p>This page will display content about the Pakistan Economy.</p>
+  <ol id="presentation-list"></ol>
   <script>
-    // Show list of presentations (Box 2)
+    // Show numbered list of presentations
     document.getElementById('presentation-list').innerHTML = presentations.map(f =>
       `<li><a href="${f.url}" target="_blank">${f.title}</a></li>`
     ).join('');
