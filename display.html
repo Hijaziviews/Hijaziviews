@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>List of Content</title>
-</head>
-<body>
-  <h1>List of Content</h1>
-  <p>This page will display content about the Pakistan Economy.</p>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Presentation List</title>
+  <title>List of Content</title>
   <script src="presentations.js"></script>
 </head>
 <body>
-<h2>Pakistan Cumulative Price Index 1947-2025</h2>
+  <h2>List of Content</h2>
   <ul id="presentation-list"></ul>
-    <div id="miniatures-section"></div>
   <script>
     // Show list of presentations (Box 2)
     document.getElementById('presentation-list').innerHTML = presentations.map(f =>
       `<li><a href="${f.url}" target="_blank">${f.title}</a></li>`
-    ).join('');
-    // Show thumbnails
-    document.getElementById('miniatures-section').innerHTML = presentations.map(f =>
-      `<div style="display:inline-block;margin:10px;">
-          <a href="${f.url}" target="_blank">
-            <img src="${f.thumbnail}" alt="${f.title}" style="width:150px;">
-          </a>
-        </div>`
     ).join('');
   </script>
 </body>
