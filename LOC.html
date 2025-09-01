@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOC Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="presentations.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f6f8fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 32px 24px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #005c99;
+    }
+    .description {
+      font-size: 1.12rem;
+      margin-bottom: 26px;
+      color: #333;
+    }
+    .connected-files {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+    }
+    .connected-files h2 {
+      font-size: 1.2rem;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #224466;
+      margin-bottom: 12px;
+    }
+    .connected-files ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .connected-files li {
+      margin-bottom: 12px;
+    }
+    .connected-files a {
+      text-decoration: none;
+      color: #005c99;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .connected-files a:hover {
+      color: #0099cc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LOC Presentation</h1>
+    <div class="description">
+      <!-- Replace this text with your own LOC content/description -->
+      This page contains the LOC presentation. Add your introduction, details, and any related images or links here. You can explain what "LOC" stands for, summarize the topic, and add relevant content.
+    </div>
+
+    <div class="connected-files">
+      <h2>Connected Files</h2>
+      <ul id="loc-file-list"></ul>
+    </div>
+  </div>
+  <script>
+    // Automatically list all presentations connected to LOC
+    document.getElementById('loc-file-list').innerHTML = presentations.map(f =>
+      `<li><a href="${f.url}">${f.title}</a></li>`
+    ).join('');
+  </script>
+</body>
+</html>
