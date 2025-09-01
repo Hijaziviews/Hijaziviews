@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <img src="images/Frontweb.png" alt="Front Page Image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Front Page</title>
@@ -24,11 +23,15 @@
             justify-content: center;
             background: #fff;
             min-height: 48vh;
+            /* Add padding below the image for gap */
+            padding-bottom: 30px; /* ~2-3cm depending on screen */
         }
         .top-half img {
             max-height: 100%;
             max-width: 100%;
             object-fit: contain;
+            display: block;
+            margin: 0 auto;
         }
         .bottom-half {
             flex: 1;
@@ -79,13 +82,16 @@
                 font-size: 1.2rem;
                 min-height: 70px;
             }
+            .top-half {
+                padding-bottom: 20px; /* smaller gap on mobile */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="top-half">
-            <img src="front page of web.png" alt="Front Page of Web">
+            <img src="images/Frontweb.png" alt="Front Page Image">
         </div>
         <div class="bottom-half">
             <a class="box-link" href="introduction.html"><div class="box box1">Introduction to Web and Author</div></a>
