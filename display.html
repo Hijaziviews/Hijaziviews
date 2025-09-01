@@ -2,15 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>List of Content</title>
+  <title>Pakistan Economy: List of Presentations</title>
   <script src="presentations.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #f0f4ff; /* Replace with your Box 2 color if different */
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .left {
+      width: 25%;
+      background: #f0f4ff; /* Or another color if you want contrast */
+      /* You can add content or leave blank */
+    }
+    .divider {
+      width: 0;
+      border-left: 10px solid #222;
+      margin-right: -10px;
+      height: 100vh;
+    }
+    .right {
+      width: 75%;
+      padding: 40px 30px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    #presentation-list li {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+  </style>
 </head>
 <body>
-  <h2>List of Content</h2>
-  <p>This page will display content about the Pakistan Economy.</p>
-  <ol id="presentation-list"></ol>
+  <div class="container">
+    <div class="left"></div>
+    <div class="divider"></div>
+    <div class="right">
+      <h1>Pakistan Economy: List of Presentations</h1>
+      <ol id="presentation-list"></ol>
+    </div>
+  </div>
   <script>
-    // Show numbered list of presentations
     document.getElementById('presentation-list').innerHTML = presentations.map(f =>
       `<li><a href="${f.url}" target="_blank">${f.title}</a></li>`
     ).join('');
