@@ -83,3 +83,21 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOC Presentation</title>
+  <script src="presentations.js"></script>
+</head>
+<body>
+  <h1>LOC Presentation</h1>
+  <ul id="loc-file-list"></ul>
+  <script>
+    // Show list of presentations on LOC page
+    document.getElementById('loc-file-list').innerHTML = presentations.map(f =>
+      `<li><a href="${f.url}" target="_blank">${f.title}</a></li>`
+    ).join('');
+  </script>
+</body>
+</html>
